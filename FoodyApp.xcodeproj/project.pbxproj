@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2128E9E39863C4531656D117 /* Pods_FoodyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3733F4F6AC8B39A87D330C23 /* Pods_FoodyApp.framework */; };
 		FA8F6E6A27A2AE59008CFC73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F6E6927A2AE59008CFC73 /* AppDelegate.swift */; };
 		FA8F6E6C27A2AE59008CFC73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F6E6B27A2AE59008CFC73 /* SceneDelegate.swift */; };
 		FA8F6E6E27A2AE59008CFC73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F6E6D27A2AE59008CFC73 /* ViewController.swift */; };
 		FA8F6E7127A2AE59008CFC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8F6E6F27A2AE59008CFC73 /* Main.storyboard */; };
 		FA8F6E7327A2AE62008CFC73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8F6E7227A2AE62008CFC73 /* Assets.xcassets */; };
 		FA8F6E7627A2AE62008CFC73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8F6E7427A2AE62008CFC73 /* LaunchScreen.storyboard */; };
+		FA8F6E8027A2B4B4008CFC73 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F6E7F27A2B4B4008CFC73 /* DetailsViewController.swift */; };
+		FA8F6E8327A2B8EB008CFC73 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F6E8127A2B8EB008CFC73 /* TableViewCell.swift */; };
+		FA8F6E8427A2B8EB008CFC73 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8F6E8227A2B8EB008CFC73 /* TableViewCell.xib */; };
+		FA8F6E8627A2DA26008CFC73 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F6E8527A2DA26008CFC73 /* Receipt.swift */; };
+		FA8F6E8827A302D1008CFC73 /* UIImageView+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F6E8727A302D1008CFC73 /* UIImageView+setImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3733F4F6AC8B39A87D330C23 /* Pods_FoodyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE11295F67549B0262A1A17 /* Pods-FoodyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodyApp.release.xcconfig"; path = "Target Support Files/Pods-FoodyApp/Pods-FoodyApp.release.xcconfig"; sourceTree = "<group>"; };
+		C5D07D39A7D370ACD330C3AE /* Pods-FoodyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodyApp.debug.xcconfig"; path = "Target Support Files/Pods-FoodyApp/Pods-FoodyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FA8F6E6627A2AE59008CFC73 /* FoodyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8F6E6927A2AE59008CFC73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA8F6E6B27A2AE59008CFC73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		FA8F6E7227A2AE62008CFC73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA8F6E7527A2AE62008CFC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA8F6E7727A2AE62008CFC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8F6E7F27A2B4B4008CFC73 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FA8F6E8127A2B8EB008CFC73 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FA8F6E8227A2B8EB008CFC73 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		FA8F6E8527A2DA26008CFC73 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		FA8F6E8727A302D1008CFC73 /* UIImageView+setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+setImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2128E9E39863C4531656D117 /* Pods_FoodyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6871E8BC7D8BF05AE4C5C187 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5D07D39A7D370ACD330C3AE /* Pods-FoodyApp.debug.xcconfig */,
+				ADE11295F67549B0262A1A17 /* Pods-FoodyApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D8D32C7B2B73F4964E1C1EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3733F4F6AC8B39A87D330C23 /* Pods_FoodyApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA8F6E5D27A2AE59008CFC73 = {
 			isa = PBXGroup;
 			children = (
 				FA8F6E6827A2AE59008CFC73 /* FoodyApp */,
 				FA8F6E6727A2AE59008CFC73 /* Products */,
+				6871E8BC7D8BF05AE4C5C187 /* Pods */,
+				9D8D32C7B2B73F4964E1C1EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +97,11 @@
 				FA8F6E7227A2AE62008CFC73 /* Assets.xcassets */,
 				FA8F6E7427A2AE62008CFC73 /* LaunchScreen.storyboard */,
 				FA8F6E7727A2AE62008CFC73 /* Info.plist */,
+				FA8F6E7F27A2B4B4008CFC73 /* DetailsViewController.swift */,
+				FA8F6E8127A2B8EB008CFC73 /* TableViewCell.swift */,
+				FA8F6E8227A2B8EB008CFC73 /* TableViewCell.xib */,
+				FA8F6E8527A2DA26008CFC73 /* Receipt.swift */,
+				FA8F6E8727A302D1008CFC73 /* UIImageView+setImage.swift */,
 			);
 			path = FoodyApp;
 			sourceTree = "<group>";
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA8F6E7A27A2AE62008CFC73 /* Build configuration list for PBXNativeTarget "FoodyApp" */;
 			buildPhases = (
+				2C4D45E5967AD1B5002CA0D5 /* [CP] Check Pods Manifest.lock */,
 				FA8F6E6227A2AE59008CFC73 /* Sources */,
 				FA8F6E6327A2AE59008CFC73 /* Frameworks */,
 				FA8F6E6427A2AE59008CFC73 /* Resources */,
+				C790BFE9BFA96D1E7B6F4CBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8F6E7627A2AE62008CFC73 /* LaunchScreen.storyboard in Resources */,
+				FA8F6E8427A2B8EB008CFC73 /* TableViewCell.xib in Resources */,
 				FA8F6E7327A2AE62008CFC73 /* Assets.xcassets in Resources */,
 				FA8F6E7127A2AE59008CFC73 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +175,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C4D45E5967AD1B5002CA0D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C790BFE9BFA96D1E7B6F4CBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodyApp/Pods-FoodyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodyApp/Pods-FoodyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodyApp/Pods-FoodyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA8F6E6227A2AE59008CFC73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8F6E8627A2DA26008CFC73 /* Receipt.swift in Sources */,
+				FA8F6E8327A2B8EB008CFC73 /* TableViewCell.swift in Sources */,
 				FA8F6E6E27A2AE59008CFC73 /* ViewController.swift in Sources */,
 				FA8F6E6A27A2AE59008CFC73 /* AppDelegate.swift in Sources */,
 				FA8F6E6C27A2AE59008CFC73 /* SceneDelegate.swift in Sources */,
+				FA8F6E8027A2B4B4008CFC73 /* DetailsViewController.swift in Sources */,
+				FA8F6E8827A302D1008CFC73 /* UIImageView+setImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +372,7 @@
 		};
 		FA8F6E7B27A2AE62008CFC73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D07D39A7D370ACD330C3AE /* Pods-FoodyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +401,7 @@
 		};
 		FA8F6E7C27A2AE62008CFC73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE11295F67549B0262A1A17 /* Pods-FoodyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
