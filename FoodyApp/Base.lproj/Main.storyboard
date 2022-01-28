@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6r4-GX-Piv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6r4-GX-Piv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Recipes-->
+        <!--Foody App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +31,7 @@
                             <constraint firstItem="qCC-us-U6o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="onM-x4-DON"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipes" id="ZuL-lN-HbZ"/>
+                    <navigationItem key="navigationItem" title="Foody App" id="ZuL-lN-HbZ"/>
                     <connections>
                         <outlet property="tableView" destination="qCC-us-U6o" id="RYS-yr-qwg"/>
                     </connections>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,44 +11,51 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="204" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="FoodyApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="202" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="FoodyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="202"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+                <rect key="frame" x="0.0" y="0.0" width="335" height="202"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oeM-Al-UEH">
-                        <rect key="frame" x="10" y="10" width="300" height="121"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oeM-Al-UEH">
+                        <rect key="frame" x="10" y="10" width="315" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="yY2-XG-Qgc"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lz-dm-jY7">
-                        <rect key="frame" x="10" y="139" width="108" height="23"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreatedBy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emA-oN-GRP">
+                        <rect key="frame" x="20" y="140" width="295" height="18.5"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created by: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS7-v5-A8U">
-                        <rect key="frame" x="10" y="170" width="108" height="23"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bM-jO-yhO">
+                        <rect key="frame" x="20" y="160.5" width="295" height="25.5"/>
+                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="oeM-Al-UEH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7F1-qq-dVV"/>
+                    <constraint firstAttribute="trailing" secondItem="emA-oN-GRP" secondAttribute="trailing" constant="20" id="9nM-PW-MPK"/>
                     <constraint firstAttribute="trailing" secondItem="oeM-Al-UEH" secondAttribute="trailing" constant="10" id="FGP-ts-ucg"/>
-                    <constraint firstAttribute="bottom" secondItem="oeM-Al-UEH" secondAttribute="bottom" constant="10" id="Hgh-rq-rjd"/>
+                    <constraint firstItem="emA-oN-GRP" firstAttribute="top" secondItem="oeM-Al-UEH" secondAttribute="bottom" constant="10" id="G00-IG-Ai2"/>
+                    <constraint firstItem="6bM-jO-yhO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Izk-jg-43z"/>
+                    <constraint firstAttribute="trailing" secondItem="6bM-jO-yhO" secondAttribute="trailing" constant="20" id="ODa-zf-rOs"/>
+                    <constraint firstItem="6bM-jO-yhO" firstAttribute="top" secondItem="emA-oN-GRP" secondAttribute="bottom" constant="2" id="epc-FY-E8V"/>
+                    <constraint firstItem="emA-oN-GRP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="htL-1G-hQI"/>
                     <constraint firstItem="oeM-Al-UEH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iIO-GR-RqT"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="authorLabel" destination="mS7-v5-A8U" id="Yob-yT-rw7"/>
+                <outlet property="createdByLbl" destination="emA-oN-GRP" id="7eh-zQ-rwO"/>
                 <outlet property="receiptsImageView" destination="oeM-Al-UEH" id="Asr-ew-dro"/>
-                <outlet property="titleLabel" destination="5Lz-dm-jY7" id="OOj-JT-a12"/>
+                <outlet property="recipeTitleLbl" destination="6bM-jO-yhO" id="PC7-7s-Fb9"/>
             </connections>
-            <point key="canvasLocation" x="134.78260869565219" y="160.04464285714286"/>
+            <point key="canvasLocation" x="168.84057971014494" y="111.83035714285714"/>
         </tableViewCell>
     </objects>
     <resources>

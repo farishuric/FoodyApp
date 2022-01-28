@@ -19,6 +19,7 @@
 		FA8F6E8427A2B8EB008CFC73 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8F6E8227A2B8EB008CFC73 /* TableViewCell.xib */; };
 		FA8F6E8627A2DA26008CFC73 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F6E8527A2DA26008CFC73 /* Receipt.swift */; };
 		FA8F6E8827A302D1008CFC73 /* UIImageView+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F6E8727A302D1008CFC73 /* UIImageView+setImage.swift */; };
+		FA8F6E8A27A42A1D008CFC73 /* ViewTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8F6E8927A42A1D008CFC73 /* ViewTest.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FA8F6E8227A2B8EB008CFC73 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		FA8F6E8527A2DA26008CFC73 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 		FA8F6E8727A302D1008CFC73 /* UIImageView+setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+setImage.swift"; sourceTree = "<group>"; };
+		FA8F6E8927A42A1D008CFC73 /* ViewTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewTest.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				FA8F6E8227A2B8EB008CFC73 /* TableViewCell.xib */,
 				FA8F6E8527A2DA26008CFC73 /* Receipt.swift */,
 				FA8F6E8727A302D1008CFC73 /* UIImageView+setImage.swift */,
+				FA8F6E8927A42A1D008CFC73 /* ViewTest.xib */,
 			);
 			path = FoodyApp;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				FA8F6E8427A2B8EB008CFC73 /* TableViewCell.xib in Resources */,
 				FA8F6E7327A2AE62008CFC73 /* Assets.xcassets in Resources */,
 				FA8F6E7127A2AE59008CFC73 /* Main.storyboard in Resources */,
+				FA8F6E8A27A42A1D008CFC73 /* ViewTest.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +382,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BURUYS8MLQ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -386,12 +390,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tershouse.FoodyApp;
+				PRODUCT_BUNDLE_IDENTIFIER = test.FoodyAppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -407,7 +412,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BURUYS8MLQ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -415,12 +420,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tershouse.FoodyApp;
+				PRODUCT_BUNDLE_IDENTIFIER = test.FoodyAppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -9,21 +9,22 @@ import UIKit
 
 
 class TableViewCell: UITableViewCell {
-    
-    
+
+   
+    @IBOutlet weak var createdByLbl: UILabel!
     @IBOutlet weak var receiptsImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var authorLabel: UILabel!
+    
+    @IBOutlet weak var recipeTitleLbl: UILabel!
     
     var recept: Recipe!{
         didSet{
+            
             self.receiptsImageView.setImage(imageUrl: self.recept.image)
-            self.titleLabel.text = String(self.recept.label)
-            self.authorLabel.text = String(self.recept.source)
+            self.createdByLbl?.text = self.recept.label
+            self.recipeTitleLbl?.text = self.recept.source
+            
         }
     }
-    
-    
     
     override func awakeFromNib() {
         receiptsImageView.layer.cornerRadius = 15.0

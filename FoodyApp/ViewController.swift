@@ -9,11 +9,7 @@ import UIKit
 
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    
-    
-    
-    
-    
+     
     @IBOutlet weak var tableView: UITableView!
     
     var receipt: Receipt?
@@ -32,16 +28,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(cell, forCellReuseIdentifier: "TableViewCell")
+        loadData(searchTerm: "random")
 
         
         setSearchBarParameters()
     }
     
-    
-    
-
-    
-
     
     
     func loadData(searchTerm: String) {
@@ -50,9 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //            return
         //        }
         
-        
-
-        
+        receipts = []
         var components = URLComponents()
         
         components.scheme = "https"
@@ -77,7 +67,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 if let decodedResponse = try? JSONDecoder().decode(Receipt.self, from: data) {
                     DispatchQueue.main.async {
                         self.receipt = decodedResponse.self
-                        // self.receipt.hits[0].recipe.label
                         for item in self.receipt!.hits {
                             self.receipts.append(item.recipe)
                         }
@@ -117,27 +106,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        120
+        200
     }
+    
+
     
 }
 
 
-
-
-
 extension ViewController: UISearchResultsUpdating, UISearchBarDelegate {
+   
+    func updateSearchResults(for searchController: UISearchController) {
+        return
+    }
+    
     
     var isSearchBarEmpty: Bool {
         return searchController.searchBar.text?.isEmpty ?? true
-    }
-    
-
-    
-    
-    
-    func updateSearchResults(for searchController: UISearchController) {
-        //
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -147,13 +132,15 @@ extension ViewController: UISearchResultsUpdating, UISearchBarDelegate {
         loadData(searchTerm: searchText)
         print(searchText)
         tableView?.reloadData()
+      
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         print("cancel clicked")
+        searchController.searchBar.text = nil
         searchBar.text = nil
         searchBar.resignFirstResponder()
-        !isSearchBarEmpty ? "empty" : "has letters"
+//        !isSearchBarEmpty ? "empty" : "has letters"
         loadData(searchTerm: "random")
         tableView?.reloadData()
     }

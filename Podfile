@@ -7,6 +7,5 @@ target 'FoodyApp' do
 
   # Pods for FoodyApp
 	pod 'Kingfisher', '~> 7.0'
-	pod 'Alamofire'
 
 end
